@@ -47,6 +47,14 @@ body {
   font-size: 26px;
   display: none;
 }
+.section-title {
+  color: var(--blackColor);
+  font-size: 2.44rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 68px;
+}
 /* Header Section Style */
 .header {
   max-width: 984px;
@@ -126,7 +134,7 @@ body {
   margin-top: 14px;
 }
 .hero .hero-content {
-  max-width: 500px;
+  max-width: 540px;
 }
 .hero .hero-title {
   font-size: 2.9rem;
@@ -157,6 +165,83 @@ body {
 }
 /* Header Style End */
 
+/* Curriculum Section Style */
+.curriculum {
+  background-image: url(./assets/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.curriculum .card-container {
+  display: flex;
+  padding: 0 120px;
+  gap: 20px;
+}
+.curriculum .card {
+  max-width: 310px;
+  text-align: center;
+  padding: 42px 34px 49px;
+  border-radius: 14px;
+  box-shadow: inset 0px 0px 23px 0.94px rgba(0, 0, 0, 0.05);
+}
+.curriculum .card-1 {
+  background: linear-gradient(rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%),
+    rgb(255, 255, 255);
+}
+.curriculum .card-2 {
+  background: linear-gradient(rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%),
+    rgb(255, 255, 255);
+}
+.curriculum .card-3 {
+  background: linear-gradient(rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%),
+    rgb(255, 255, 255);
+}
+.curriculum .card a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.curriculum .card-1 a {
+  color: rgb(100, 200, 255);
+}
+.curriculum .card-2 a {
+  color: rgb(240, 170, 0);
+}
+.curriculum .card-3 a {
+  color: rgb(135, 0, 255);
+}
+
+.card-container img {
+  width: 100px;
+}
+.card-container .title {
+  color: rgb(32, 32, 32);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.curriculum .description {
+  color: rgb(128, 128, 128);
+  font-family: var(--secondaryFont);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 23px;
+  margin: 20px 0;
+}
+.curriculum .arrow {
+  text-align: center;
+  margin: 68px 0 50px 0;
+}
+.curriculum .arrow i {
+  padding: 15px 17px;
+  margin: 0 3px;
+  border-radius: 50%;
+  color: var(--whiteColor);
+  background-color: var(--orangeColor);
+  transition: transform 0.3s;
+}
+.curriculum .arrow i:hover {
+  transform: scale(1.08);
+}
 /* Responsive */
 @media screen and (max-width: 576px) {
   .header {
@@ -174,12 +259,25 @@ body {
     flex-direction: column-reverse;
     text-align: center;
   }
-  .hero-title {
-    font-size: 1.4rem;
+  .hero .hero-title {
+    font-size: 1.7rem;
   }
   .hero-description {
     font-size: 0.7rem;
     font-weight: 500;
+  }
+  .section-title {
+    font-size: 1.38rem;
+    margin-bottom: 10px;
+  }
+  /* Curriculum */
+  .curriculum .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .curriculum .arrow {
+    display: none;
   }
 }
 
@@ -191,5 +289,17 @@ body {
   .hero {
     flex-direction: column-reverse;
     text-align: center;
+  }
+  .section-title {
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+  /* Curriculum */
+  .curriculum .card-container {
+    align-items: center;
+    padding: 20px;
+  }
+  .curriculum .card{
+    padding:16px 8px;
   }
 }
