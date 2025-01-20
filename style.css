@@ -29,8 +29,8 @@ body {
 }
 /* Shared Style */
 .btn {
-  padding: 8px 14px;
-  border-radius: 5px;
+  padding: 6px 18px;
+  border-radius: 8px;
   font-family: var(--primaryFont);
   background-color: var(--orangeColor);
   color: var(--whiteColor);
@@ -43,7 +43,10 @@ body {
 .btn:hover {
   transform: scale(1.04);
 }
-
+.button-container i {
+  font-size: 26px;
+  display: none;
+}
 /* Header Section Style */
 .header {
   max-width: 984px;
@@ -66,8 +69,10 @@ body {
 }
 .logo-title {
   color: rgb(17, 17, 17);
-  font-size: 1.68rem;
+  font-size: 1.73rem;
   font-weight: 700;
+  text-transform: capitalize;
+  margin-left: 8px;
 }
 
 /* NavLinks */
@@ -86,7 +91,7 @@ body {
   color: var(--orangeColor);
 }
 .home:hover {
-  background: var(--orangeColor);
+  background-color: var(--skyBlue);
   color: var(--whiteColor);
 }
 .navlinks .about {
@@ -100,14 +105,90 @@ body {
   color: rgb(5, 212, 223);
 }
 .facilities:hover {
-  background: rgb(5, 212, 223);
+  background-color: var(--skyBlue);
   color: var(--whiteColor);
 }
 .navlinks .admission {
   color: rgb(93, 88, 239);
 }
 .admission:hover {
-  background: rgb(93, 88, 239);
+  background-color: var(--skyBlue);
   color: var(--whiteColor);
 }
 /* Nav End */
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 14px;
+}
+.hero .hero-content {
+  max-width: 500px;
+}
+.hero .hero-title {
+  font-size: 2.9rem;
+  font-weight: 700;
+}
+.hero-title .orange {
+  color: var(--orangeColor);
+}
+.hero-title .skyblue {
+  color: var(--skyBlue);
+}
+.hero .hero-description {
+  color: rgb(17, 17, 17);
+  font-size: 1.06rem;
+  font-weight: 400;
+  margin: 16px 0;
+  line-height: 22px;
+}
+.hero .btn {
+  background: rgb(17, 17, 17);
+  font-weight: 700;
+}
+.hero .image-container {
+  max-width: 395px;
+}
+.hero .image-container img {
+  width: 100%;
+}
+/* Header Style End */
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 16px;
+  }
+  .navlinks,
+  .navbar .btn {
+    display: none;
+  }
+  .navbar i {
+    display: block;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 1.4rem;
+  }
+  .hero-description {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}
+
+/* For Tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .header {
+    padding: 10px 20px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
