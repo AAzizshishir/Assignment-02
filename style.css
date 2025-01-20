@@ -163,7 +163,8 @@ body {
     padding: 16px;
   }
   .navlinks,
-  .navbar .btn {
+  .navbar .btn,
+  .logo-title {
     display: none;
   }
   .navbar i {
