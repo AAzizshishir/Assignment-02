@@ -1,22 +1,113 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-:root{
-    --primaryFont: "Quicksand", serif;
-    --secondaryFont: "Raleway", serif;
+:root {
+  /* Font Family */
+  --primaryFont: "Quicksand", serif;
+  --secondaryFont: "Raleway", serif;
+
+  /* Colors */
+  --blackColor: rgb(0, 0, 0);
+  --whiteColor: rgb(255, 255, 255);
+  --orangeColor: rgb(254, 163, 1);
+  --skyBlue: rgb(1, 172, 253);
 }
 
 /* Reset Styles */
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
-body{
-    max-width: 100vw;
-    min-height: 100vh;
-    font-family: var(--primaryFont);
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: var(--primaryFont);
 }
+/* Shared Style */
+.btn {
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-family: var(--primaryFont);
+  background-color: var(--orangeColor);
+  color: var(--whiteColor);
+  font-size: 1.06rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.btn:hover {
+  transform: scale(1.04);
+}
+
+/* Header Section Style */
+.header {
+  max-width: 984px;
+  margin: 0 auto;
+}
+
+/* Nav */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.logo-image {
+  width: 48px;
+}
+.logo-title {
+  color: rgb(17, 17, 17);
+  font-size: 1.68rem;
+  font-weight: 700;
+}
+
+/* NavLinks */
+.navlinks ul li {
+  display: inline-block;
+}
+.navlinks ul > li > a {
+  font-size: 1.06rem;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.navlinks .home {
+  color: var(--orangeColor);
+}
+.home:hover {
+  background: var(--orangeColor);
+  color: var(--whiteColor);
+}
+.navlinks .about {
+  color: var(--skyBlue);
+}
+.about:hover {
+  background: var(--skyBlue);
+  color: var(--whiteColor);
+}
+.navlinks .facilities {
+  color: rgb(5, 212, 223);
+}
+.facilities:hover {
+  background: rgb(5, 212, 223);
+  color: var(--whiteColor);
+}
+.navlinks .admission {
+  color: rgb(93, 88, 239);
+}
+.admission:hover {
+  background: rgb(93, 88, 239);
+  color: var(--whiteColor);
+}
+/* Nav End */
