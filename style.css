@@ -242,6 +242,102 @@ body {
 .curriculum .arrow i:hover {
   transform: scale(1.08);
 }
+/* Curriculum Section End */
+
+/* Story Section */
+.story {
+  padding: 0 7.4rem;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(254, 163, 1, 0.3)
+    ),
+    url(./assets/bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.stories-container {
+  display: flex;
+  gap: 0.8rem;
+}
+.stories-container .left-box {
+  max-width: 460px;
+  background-color: var(--whiteColor);
+  border-radius: 0 0 12px 12px;
+}
+.stories-container .right-box {
+  max-width: 510px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem;
+}
+
+.stories-container img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+.story .right-box .box {
+  border-radius: 12px;
+  background-color: var(--whiteColor);
+}
+.story .left-box .box-content {
+  padding: 0 55px 16px 32px;
+}
+.story .right-box .box-content {
+  padding: 0 1rem 1rem;
+}
+.story .left-box .story-btn {
+  padding: 11px 16px;
+  border-radius: 35px;
+  font-family: var(--secondaryFont);
+  background-color: rgb(60, 216, 232);
+  color: var(--whiteColor);
+  border: none;
+  position: relative;
+  bottom: 24px;
+}
+.story .right-box .story-btn {
+  font-family: var(--secondaryFont);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 35px;
+  background-color: rgb(149, 178, 38);
+  color: var(--whiteColor);
+  position: relative;
+  bottom: 22px;
+}
+.right-box .box-2 .story-btn {
+  background-color: rgb(93, 88, 240);
+}
+.story .left-box .story-title {
+  color: var(--blackColor);
+  font-size: 1.28rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.story .right-box .story-title {
+  color: var(--blackColor);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 24px;
+}
+.story .left-box .description {
+  color: rgb(102, 102, 102);
+  font-family: var(--secondaryFont);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 23px;
+}
+.story .button-container {
+  text-align: center;
+}
+.story .button-container .btn {
+  background: rgb(17, 17, 17);
+  font-weight: 700;
+  padding: 6px 30px;
+  margin: 68px 0 50px 0;
+}
+/* Story Section End */
+
 /* Responsive */
 @media screen and (max-width: 576px) {
   .header {
@@ -252,7 +348,7 @@ body {
   .logo-title {
     display: none;
   }
-  .navbar{
+  .navbar {
     border-bottom: 1px solid var(--orangeColor);
     padding-bottom: 1rem;
   }
@@ -283,6 +379,16 @@ body {
   .curriculum .arrow {
     display: none;
   }
+  /* Story */
+  .story {
+    padding: 0 1rem;
+  }
+  .stories-container .left-box {
+    display: none;
+  }
+  .stories-container .right-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* For Tablet */
@@ -303,7 +409,7 @@ body {
     align-items: center;
     padding: 20px;
   }
-  .curriculum .card{
-    padding:16px 8px;
+  .curriculum .card {
+    padding: 16px 8px;
   }
 }
