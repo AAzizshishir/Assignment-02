@@ -125,6 +125,33 @@ body {
 }
 /* Nav End */
 
+/* Marquee Efect */
+.marquee{
+  border: 2px solid brown;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.marquee-item{
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-name: marquee-content;
+  animation-timing-function: linear;
+  padding: 5px 15px;
+}
+.marquee:hover .marquee-item{
+  animation-play-state: paused;
+}
+@keyframes marquee-content{
+  from{
+    transform:translateX(0%)
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
 /* Hero */
 .hero {
   display: flex;
