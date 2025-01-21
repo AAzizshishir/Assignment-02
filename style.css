@@ -252,6 +252,10 @@ body {
   .logo-title {
     display: none;
   }
+  .navbar{
+    border-bottom: 1px solid var(--orangeColor);
+    padding-bottom: 1rem;
+  }
   .navbar i {
     display: block;
   }
