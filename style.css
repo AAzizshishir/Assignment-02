@@ -126,29 +126,31 @@ body {
 /* Nav End */
 
 /* Marquee Efect */
-.marquee{
-  border: 2px solid brown;
+.marquee {
+  /* border: 2px solid brown; */
+  background-color: #cbf3f0;
   display: flex;
   overflow: hidden;
   white-space: nowrap;
   max-width: 600px;
   margin: 20px auto;
 }
-.marquee-item{
+.marquee-item {
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-name: marquee-content;
   animation-timing-function: linear;
   padding: 5px 15px;
+  font-size: 1.2rem;
 }
-.marquee:hover .marquee-item{
+.marquee:hover .marquee-item {
   animation-play-state: paused;
 }
-@keyframes marquee-content{
-  from{
-    transform:translateX(0%)
+@keyframes marquee-content {
+  from {
+    transform: translateX(0%);
   }
-  to{
+  to {
     transform: translateX(-100%);
   }
 }
@@ -384,8 +386,9 @@ body {
 }
 .footer .logo {
   width: 60px;
+  margin-right: 10px;
 }
-.footer .logo-title {
+.footer .footer-logo-title {
   color: var(--whiteColor);
   font-size: 2.2rem;
   font-weight: 700;
@@ -413,7 +416,7 @@ body {
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.footer .right img{
+.footer .right img {
   width: 30px;
   margin-right: 5px;
 }
